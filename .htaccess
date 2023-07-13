@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteBase /task_2/
+
+RewriteRule (.+) kernel/index.php [L] # 1
+#RewriteRule ^public\/(test1|test2)\.php$ kernel/index.php [L] # 2
+#RewriteRule !^kernel\/index.php$ kernel/index.php [L] # 3
+
+# RewriteCond %{REQUEST_URI} !/public/test1\.php
+# RewriteRule (.+) kernel/index.php [L] # Это так по приколу сделал
